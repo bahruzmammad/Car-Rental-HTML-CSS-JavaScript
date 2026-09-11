@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Car Rental | Avtomobil İcarəsi</title>
+  </head>
+  <body>
+    <!-- Naviqasiya və əsas başlıq -->
+    <header>
+      <nav>
+        <div class="navigation-header">
+          <div class="navigation-logo">
+            <a href="#" class="logo">
+              <img
+                src="assets/images/logo-white.png"
+                alt="Car Rental loqosu"
+                class="logo-white"
+              />
+              <img
+                src="assets/images/logo-dark.png"
+                alt="Car Rental loqosu"
+                class="logo-dark"
+              />
+
+              <span>Car Rental</span>
+            </a>
+          </div>
+
+          <div class="navigation-menu-button" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+
+        <ul class="navigation-links" id="nav-links">
+          <li><a href="#home">Ana Səhifə</a></li>
+          <li><a href="#about">Haqqımızda</a></li>
+          <li><a href="#deals">İcarə Təklifləri</a></li>
+          <li><a href="#choose">Niyə Biz?</a></li>
+          <li><a href="#client">Müştəri Rəyləri</a></li>
+          <li><a href="#">Qeydiyyat</a></li>
+        </ul>
+
+        <div class="navigation-buttons">
+          <button class="button">Qeydiyyat</button>
+        </div>
+      </nav>
+
+      <div class="header-container" id="home">
+        <div class="header-image">
+          <img src="assets/images/header.png" alt="Avtomobil icarəsi" />
+        </div>
+
+        <div class="header-content">
+          <h2>100% Etibarlı avtomobil icarəsi xidməti</h2>
+
+          <h1>AVTOMOBİL İCARƏ ETMƏYİN SÜRƏTLİ VƏ ASAN YOLU</h1>
+
+          <p class="section-description">
+            Sizə uyğun avtomobili seçin, tarixləri müəyyənləşdirin və rahat
+            səyahətinizə başlayın. Etibarlı avtomobillər, asan rezervasiya və
+            keyfiyyətli xidmət ilə avtomobil icarəsini daha rahat edirik.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Axtarış forması -->
+    <section class="header-form">
+      <form action="/">
+        <div class="input-group">
+          <label for="location">Götürmə və qaytarma məkanı</label>
+
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Bakı, Azərbaycan"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="start">Götürmə tarixi</label>
+
+          <input
+            type="text"
+            name="start"
+            id="start"
+            placeholder="16 Avqust, 10:00"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="stop">Qaytarma tarixi</label>
+
+          <input
+            type="text"
+            name="stop"
+            id="stop"
+            placeholder="18 Avqust, 22:00"
+          />
+        </div>
+
+        <button class="button">Axtar <i class="ri-search-line"></i></button>
+      </form>
+    </section>
+
+    <!-- İcarə prosesi -->
+    <section class="section-container about-container" id="about">
+      <h2 class="section-header">Necə işləyir?</h2>
+
+      <p class="section-description">
+        Bizdən avtomobil icarəyə götürmək çox sadədir. Avtomobilinizi seçin,
+        tarixləri müəyyənləşdirin və rezervasiyanızı tamamlayın.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <span> <i class="ri-map-pin-2-fill"></i> </span>
+
+          <h4>Məkan Seçin</h4>
+
+          <p>Ehtiyacınıza uyğun götürmə və qaytarma məkanını seçin.</p>
+        </div>
+
+        <div class="about-card">
+          <span> <i class="ri-calendar-event-fill"></i> </span>
+
+          <h4>Tarix Seçin</h4>
+
+          <p>
+            Avtomobili götürəcəyiniz tarix və saatı dəqiq şəkildə müəyyən edin.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <span> <i class="ri-roadster-fill"></i> </span>
+
+          <h4>Avtomobili Rezerv Edin</h4>
+
+          <p>
+            Bir neçə addımda rezervasiyanı tamamlayın və avtomobilinizi vaxtında
+            əldə edin.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Populyar avtomobillər -->
+    <section class="deals" id="deals">
+      <div class="section-container deals-container">
+        <h2 class="section-header">Ən populyar avtomobil icarəsi təklifləri</h2>
+
+        <p class="section-description">
+          Ən çox seçilən avtomobillərimizi kəşf edin və sizə uyğun olan
+          avtomobili sərfəli qiymətə icarəyə götürün.
+        </p>
+
+        <div class="deals-tabs">
+          <button class="button active" data-id="Tesla">Tesla</button>
+          <button class="button" data-id="Mitsubishi">Mitsubishi</button>
+          <button class="button" data-id="Mazda">Mazda</button>
+          <button class="button" data-id="Toyota">Toyota</button>
+          <button class="button" data-id="Honda">Honda</button>
+        </div>
+
+        <div id="Tesla" class="tab-content active">
+          <div class="deals-card">
+            <img src="assets/images/deals-1.png" alt="Tesla Model S" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(550)</span>
+            </div>
+
+            <h4>Tesla Model S</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Avtopilot
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400 km
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Elektrik
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$180<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-2.png" alt="Tesla Model E" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(450)</span>
+            </div>
+
+            <h4>Tesla Model E</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Avtopilot
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400 km
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Elektrik
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$150<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-3.png" alt="Tesla Model Y" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(550)</span>
+            </div>
+
+            <h4>Tesla Model Y</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Avtopilot
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400 km
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Elektrik
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$200<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Mitsubishi" class="tab-content">
+          <div class="deals-card">
+            <img src="assets/images/deals-4.png" alt="Mitsubishi Mirage" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(350)</span>
+            </div>
+
+            <h4>Mitsubishi Mirage</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$120<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-5.png" alt="Mitsubishi Xpander" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(250)</span>
+            </div>
+
+            <h4>Mitsubishi Xpander</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$150<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img
+              src="assets/images/deals-6.png"
+              alt="Mitsubishi Pajero Sport"
+            />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(150)</span>
+            </div>
+
+            <h4>Mitsubishi Pajero Sport</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$180<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Mazda" class="tab-content">
+          <div class="deals-card">
+            <img src="assets/images/deals-7.png" alt="Mazda CX-5" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(200)</span>
+            </div>
+
+            <h4>Mazda CX-5</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$130<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-8.png" alt="Mazda CX-30" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(100)</span>
+            </div>
+
+            <h4>Mazda CX-30</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$200<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-9.png" alt="Mazda CX-9" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(180)</span>
+            </div>
+
+            <h4>Mazda CX-9</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$180<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Toyota" class="tab-content">
+          <div class="deals-card">
+            <img src="assets/images/deals-10.png" alt="Toyota Corolla" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(250)</span>
+            </div>
+
+            <h4>Toyota Corolla</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$180<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-11.png" alt="Toyota Innova" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(550)</span>
+            </div>
+
+            <h4>Toyota Innova</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$150<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-12.png" alt="Toyota Fortuner" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(180)</span>
+            </div>
+
+            <h4>Toyota Fortuner</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$190<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Honda" class="tab-content">
+          <div class="deals-card">
+            <img src="assets/images/deals-13.png" alt="Honda Amaze" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(200)</span>
+            </div>
+
+            <h4>Honda Amaze</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$100<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-14.png" alt="Honda Elevate" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(350)</span>
+            </div>
+
+            <h4>Honda Elevate</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$120<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="deals-card">
+            <img src="assets/images/deals-15.png" alt="Honda City" />
+
+            <div class="deals-rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span> <span>(300)</span>
+            </div>
+
+            <h4>Honda City</h4>
+
+            <div class="deals-card-grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 nəfər
+              </div>
+
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Mexaniki
+              </div>
+
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18 km/l
+              </div>
+
+              <div>
+                <span><i class="ri-car-line"></i></span> Dizel
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="deals-card-footer">
+              <h3>$150<span>/Gün</span></h3>
+
+              <a href="#">
+                İndi İcarə Et <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Xidmət üstünlükləri -->
+    <section class="choose-container" id="choose">
+      <div class="choose-image">
+        <img
+          src="assets/images/choose.png"
+          alt="Avtomobil icarəsi üstünlükləri"
+        />
+      </div>
+
+      <div class="choose-content">
+        <h2 class="section-header">Niyə bizi seçməlisiniz?</h2>
+
+        <p class="section-description">
+          Etibarlı avtomobillər, münasib qiymətlər və peşəkar xidmət ilə sizə
+          rahat avtomobil icarəsi təcrübəsi təqdim edirik.
+        </p>
+
+        <div class="choose-grid">
+          <div class="choose-card">
+            <span><i class="ri-customer-service-line"></i></span>
+
+            <div>
+              <h4>Müştəri Dəstəyi</h4>
+              <p>
+                Dəstək komandamız suallarınızı cavablandırmaq üçün hər zaman
+                hazırdır.
+              </p>
+            </div>
+          </div>
+
+          <div class="choose-card">
+            <span><i class="ri-map-pin-line"></i></span>
+
+            <div>
+              <h4>Çoxsaylı Məkanlar</h4>
+              <p>
+                Səyahətiniz üçün uyğun müxtəlif götürmə və qaytarma məkanları.
+              </p>
+            </div>
+          </div>
+
+          <div class="choose-card">
+            <span><i class="ri-wallet-line"></i></span>
+
+            <div>
+              <h4>Ən Yaxşı Qiymət</h4>
+              <p>Münasib qiymətlər və hər rezervasiya üçün yüksək dəyər.</p>
+            </div>
+          </div>
+
+          <div class="choose-card">
+            <span><i class="ri-user-star-line"></i></span>
+
+            <div>
+              <h4>Təcrübəli Sürücü</h4>
+              <p>
+                Tələb olunduğu halda peşəkar və təcrübəli sürücülər təqdim
+                olunur.
+              </p>
+            </div>
+          </div>
+
+          <div class="choose-card">
+            <span><i class="ri-verified-badge-line"></i></span>
+
+            <div>
+              <h4>Etibarlı Brendlər</h4>
+              <p>
+                Yalnız yoxlanılmış və yaxşı vəziyyətdə olan avtomobil markaları.
+              </p>
+            </div>
+          </div>
+
+          <div class="choose-card">
+            <span><i class="ri-calendar-close-line"></i></span>
+
+            <div>
+              <h4>Pulsuz Ləğv</h4>
+              <p>Şərtlərə uyğun rezervasiyalar üçün çevik ləğv imkanları.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E-poçt abunəliyi -->
+    <section class="subscribe-container">
+      <div class="subscribe-image">
+        <img src="assets/images/subscribe.png" alt="E-poçt abunəliyi" />
+      </div>
+
+      <div class="subscribe-content">
+        <h2 class="section-header">
+          Ən son avtomobil icarəsi yeniliklərinə abunə olun
+        </h2>
+
+        <p class="section-description">
+          Yeni təkliflər, xüsusi kampaniyalar və avtomobil icarəsi ilə bağlı
+          yeniliklərdən xəbərdar olun.
+        </p>
+
+        <form action="/">
+          <input type="email" placeholder="E-poçt ünvanınız" />
+
+          <button class="button">Abunə Ol</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Müştəri rəyləri -->
+    <section class="section-container client-container" id="client">
+      <h2 class="section-header">Müştərilərimiz haqqımızda nə deyir?</h2>
+
+      <p class="section-description">
+        Müştərilərimizin xidmətimiz haqqında fikirlərini və real təcrübələrini
+        oxuyun.
+      </p>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-details">
+                <img src="assets/images/client-1.jpg" alt="Sarah Johnson" />
+
+                <div>
+                  <h4>Sarah Johnson</h4>
+
+                  <div class="client-rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Avtomobil icarəsi prosesi çox rahat və sürətli idi. Avtomobil
+                mükəmməl vəziyyətdə idi və xidmət keyfiyyətindən razı qaldım.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-details">
+                <img src="assets/images/client-2.jpg" alt="Michael Adams" />
+
+                <div>
+                  <h4>Michael Adams</h4>
+
+                  <div class="client-rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Müştəri dəstəyi çox yaxşı idi. Bütün suallarımı cavablandırdılar
+                və rezervasiya zamanı heç bir problem yaşamadım.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-details">
+                <img src="assets/images/client-3.jpg" alt="Emily Martinez" />
+
+                <div>
+                  <h4>Emily Martinez</h4>
+
+                  <div class="client-rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Qiymətlər münasib, avtomobil seçimi isə genişdir. Götürmə və
+                qaytarma prosesi də çox rahat keçdi.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-details">
+                <img src="assets/images/client-4.jpg" alt="Jason Lee" />
+
+                <div>
+                  <h4>Jason Lee</h4>
+
+                  <div class="client-rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Pulsuz ləğv imkanı planlarımı dəyişdirdiyim zaman çox faydalı
+                oldu. Xidmət ümumilikdə çox yaxşıdır.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-details">
+                <img src="assets/images/client-5.jpg" alt="David Thompson" />
+
+                <div>
+                  <h4>David Thompson</h4>
+
+                  <div class="client-rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Avtomobil çox yaxşı vəziyyətdə idi və sürücü təcrübəli idi.
+                Səyahətim daha rahat keçdi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alt hissə -->
+    <footer class="footer">
+      <div class="section-container footer-container">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="#" class="logo">
+              <img src="assets/images/logo-white.png" alt="Car Rental loqosu" />
+
+              <span>Car Rental</span>
+            </a>
+          </div>
+
+          <p>
+            Sizə etibarlı avtomobillər və rahat icarə təcrübəsi təqdim etmək
+            üçün çalışırıq. Yeniliklər, xüsusi təkliflər və kampaniyalar üçün
+            bizimlə əlaqədə qalın.
+          </p>
+
+          <ul class="footer-socials">
+            <li>
+              <a href="#"> <i class="ri-facebook-fill"></i> </a>
+            </li>
+
+            <li>
+              <a href="#"> <i class="ri-twitter-fill"></i> </a>
+            </li>
+
+            <li>
+              <a href="#"> <i class="ri-linkedin-fill"></i> </a>
+            </li>
+
+            <li>
+              <a href="#"> <i class="ri-instagram-line"></i> </a>
+            </li>
+
+            <li>
+              <a href="#"> <i class="ri-youtube-fill"></i> </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Xidmətlərimiz</h4>
+
+          <ul class="footer-links">
+            <li><a href="#home">Ana Səhifə</a></li>
+            <li><a href="#about">Haqqımızda</a></li>
+            <li><a href="#deals">İcarə Təklifləri</a></li>
+            <li><a href="#choose">Niyə Biz?</a></li>
+            <li><a href="#client">Müştəri Rəyləri</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Avtomobil Modelləri</h4>
+
+          <ul class="footer-links">
+            <li><a href="#">Toyota Corolla</a></li>
+            <li><a href="#">Toyota Noah</a></li>
+            <li><a href="#">Toyota Allion</a></li>
+            <li><a href="#">Toyota Premio</a></li>
+            <li><a href="#">Mitsubishi Pajero</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Əlaqə</h4>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +994 50 000 00 00
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-fill"></i></span> Bakı, Azərbaycan
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span> info@carrental.az
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        Copyright © 2026 Car Rental. Bütün hüquqlar qorunur.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
